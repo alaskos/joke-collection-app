@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                       // Use the latest JavaScript features
+    "module": "ESNext",                       // Use ECMAScript modules
+    "moduleResolution": "Node",               // Resolve modules using Node.js style
+    "strict": true,                           // Enable strict mode for better type safety
+    "esModuleInterop": true,                  // Improve compatibility with CommonJS modules
+    "skipLibCheck": true,                     // Skip checking .d.ts files for libraries
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file casing
+    "allowJs": true,                          // Allow JavaScript files in the project
+    "noImplicitAny": true,                    // Ensure all variables have an explicit type
+    "baseUrl": "./",                          // Base path for module resolution
+    "paths": {
+      "@/*": ["src/*"]                        // Alias for easier imports
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"], // Files to include
+  "exclude": ["node_modules", "dist"] // Exclude unnecessary files
+}
